@@ -1,0 +1,6 @@
+<nav aria-label="القائمة الرئيسية">
+  <a class="active" href="#home"><span class="icon">🏠</span>الرئيسية</a>
+  <a href="#about"><span class="icon">👥</span>من نحن</a>
+  <a href="#activities"><span class="icon">📚</span>الأنشطة</a>
+  <a href="#contact"><span class="icon">✉️</span>تواصل معنا</a>
+</nav>
