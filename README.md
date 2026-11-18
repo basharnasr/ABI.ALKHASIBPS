@@ -1,1 +1,182 @@
 # ABI.ALKHASIBPS
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مدرستي</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f4f7fb;
+      color: #233044;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100vh;
+      padding: 28px 18px;
+      background: #173b63;
+      color: white;
+    }
+
+    .school-name {
+      margin-bottom: 36px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 12px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #285985;
+    }
+
+    .icon {
+      width: 26px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    main {
+      margin-right: 250px;
+      padding: 32px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      padding: 48px;
+      border-radius: 16px;
+      overflow: hidden;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(10, 35, 60, 0.15), rgba(10, 35, 60, 0.85)),
+        url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=85")
+        center / cover;
+    }
+
+    .hero-content {
+      max-width: 550px;
+    }
+
+    .hero h2 {
+      margin-bottom: 16px;
+      font-size: 38px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .about {
+      margin-top: 28px;
+      padding: 28px;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 4px 16px rgba(20, 45, 70, 0.07);
+    }
+
+    .about h2 {
+      margin-bottom: 12px;
+      color: #173b63;
+    }
+
+    .about p {
+      line-height: 1.9;
+    }
+
+    @media (max-width: 700px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+      }
+
+      .school-name {
+        margin-bottom: 12px;
+      }
+
+      .sidebar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .sidebar a {
+        margin: 4px;
+        padding: 10px;
+      }
+
+      main {
+        margin-right: 0;
+        padding: 16px;
+      }
+
+      .hero {
+        min-height: 300px;
+        padding: 28px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h1 class="school-name">🏫 مدرستي</h1>
+
+    <nav aria-label="القائمة الرئيسية">
+      <a class="active" href="#home"><span class="icon">🏠</span>الرئيسية</a>
+      <a href="#about"><span class="icon">👥</span>من نحن</a>
+      <a href="#activities"><span class="icon">📚</span>الأنشطة</a>
+      <a href="#contact"><span class="icon">✉️</span>تواصل معنا</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>مرحبًا بكم في مدرستنا</h2>
+        <p>بيئة تعليمية ملهمة تساعد طلابنا على التعلم والإبداع وتحقيق طموحاتهم.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>👥 من نحن</h2>
+      <p>
+        مدرستنا مؤسسة تعليمية تهتم بتقديم تعليم متميز، وتنمية مهارات الطلاب
+        في بيئة آمنة ومحفزة على التعاون والإبداع.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
